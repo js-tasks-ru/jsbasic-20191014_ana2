@@ -6,13 +6,13 @@
  */
 function pow(m, n) {
   let result = 1;
-	for (i = 0; i < n; i++){
-		result = result * m;
-	}
-	return result;
+  for (i = 0; i < n; i += 1) {
+    result *= m;
+  }
+  return result;
 }
 
-let number   = prompt('Please insert number'),
-    exponent = prompt('Please insert exponent for number');
+let number = prompt('Please insert number');
+let exponent = prompt('Please insert exponent for number');
 
-alert( pow(number, exponent) );
+alert(pow(number, exponent));
