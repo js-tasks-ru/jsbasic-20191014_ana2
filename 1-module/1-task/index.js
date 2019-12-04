@@ -11,8 +11,3 @@ function pow(m, n) {
   }
   return result;
 }
-
-let number = prompt('Please insert number');
-let exponent = prompt('Please insert exponent for number');
-
-alert(pow(number, exponent));
