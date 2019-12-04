@@ -7,7 +7,7 @@
 function showSalary(data, age) {
   let result = '';
 
-  data.forEach(function(obj, index) {
+  data.forEach(function(obj) {
     if (obj.age <= age) {
       if (result) {
         result += '\n';
