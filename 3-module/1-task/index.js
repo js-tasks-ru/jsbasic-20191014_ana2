@@ -17,4 +17,4 @@ function showSalary(data, age) {
   });
 
   return result;
-};
+}

@@ -5,7 +5,6 @@
  * @returns {{min:number, max:number}}  объект
  */
 function getMinMax(str) {
-  let numberDetected = false;
   let numbersArray = [];
   let numberString = '';
 
