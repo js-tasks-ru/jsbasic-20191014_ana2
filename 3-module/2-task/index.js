@@ -14,9 +14,24 @@ function getMinMax(str) {
    * @returns {boolean}
    */
   function isNumber(chr) {
+    return (Number(chr) >= 0 && Number(chr) <= 9 && chr != ' ') || (chr === '-' || chr === '.');
+  }
 
+  for (let i = 0; i <= str.length; i++) {
+    if (isNumber(str[i])) {
+      numberString += str[i];
+    } else if (numberString) {
+      numbersArray.push(numberString);
+      numberString = '';
+    }
   }
-  for (let i = 0; i < str.length; i++) {
-    console.log(str[i]);
-  }
+
+  numbersArray = numbersArray.map(function(number) {
+    return Number(number);
+  });
+
+  return {
+    min: Math.min(...numbersArray),
+    max: Math.max(...numbersArray)
+  };
 }
